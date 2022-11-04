@@ -1,79 +1,58 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
-
 
 <Layout title="Keenan Nicholson">
 	<main>
-		<h1><span class="name">Hi there, I'm Keenan</span></h1>
-		<p class="instructions">
-			Extremely cool guy
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://github.com/Keenan-Nicholson/"
-				title="GitHub"
-				body=""
-			/>
-			<Card
-				href="https://www.linkedin.com/in/kbnicholson"
-				title="LinkedIn"
-				body=""
-			/>
-			<Card
-				href="mailto:https://keenanbnicholson@gmail.com"
-				title="Email"
-				body=""
-			/>
-			<Card
-				href="https://twitter.com/keeb0rg"
-				title="Twitter"
-				body=""
-			/>
-		</ul>
+		<div>
+			<h1>Hi there, I'm Keenan</h1>
+			<h2>Extremely cool guy</h2>
+			<code><pre>╠ <a href="https://github.com">GitHub</a>
+║
+╠ LinkedIn
+║
+╠ Email
+║
+╠ Twitter</pre></code>
+		</div>
 	</main>
 </Layout>
 
-
-
 <style>
 	:root {
-		background: linear-gradient(270deg,#94a3b8, #334155);
-	}
-
-	h1 {
-		margin: 2rem 0;
-	}
-
-
-	main {
-		margin: 50px;
-
-		max-width: 60ch;
-	}
-
-
-	.name {
-	
-		font-weight: 800;
-		font-size:60px;
-
-	}
-
-
-	.instructions {
-		line-height: 3;
-		font-size: 25px;
+		background: linear-gradient(270deg,#474747, #272727);
 		color: white;
 	}
 
+	main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2rem;
+	}
+
+	h1 {
+		font-weight: 600;
+		font-size: 3rem;
+		margin: 0 0 1rem 0;
+	}
+
+	h2 {
+		margin: 0 0 1.5rem 0;
+		font-size: 1.75rem;
+	}
+	
+	code {
+		font-size: 1.5rem;
+	}
+
+	a {
+		color: rgb(151, 151, 202);
+	}
 
 	.link-card-grid {
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 1rem;
 		padding: 0;
 	}
-
-
 </style>
