@@ -11,4 +11,5 @@ export default {
     serviceEntryPoint: '@astrojs/image/sharp'
   })],
   site: 'https://Keenan-Nicholson.github.io'
+  
 }
