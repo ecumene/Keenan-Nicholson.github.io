@@ -1,11 +1,75 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { Image, Picture } from '@astrojs/image/components';
+import { Image} from '@astrojs/image/components';
 ---
 
 <main>
-    <Layout title="Keenan Nicholson">
-        <Image src={import('../images/goose.jpeg')} alt="" width="400"/>
+    <Layout title="Keenan Nicholson - Goose Gallery">
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose4.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose2.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose1.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose3.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose5.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose25.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose7.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose8.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose9.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose12.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose13.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose14.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+
+			<div class="imgContainer"><Image src={import('../images/goose15.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose16.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose17.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+
+			<div class="imgContainer"><Image src={import('../images/goose18.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose19.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose20.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+
+			<div class="imgContainer"><Image src={import('../images/goose21.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose22.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose23.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+
+			<div class="imgContainer"><Image src={import('../images/goose24.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose35.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose34.jpeg')} alt="" width="400" height="600"/></div>
+
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose33.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose32.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose30.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+
+			<div class="imgContainer"><Image src={import('../images/goose31.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose29.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose28.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose27.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose11.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose10.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
+		<div>
+			<div class="imgContainer"><Image src={import('../images/goose6.jpeg')} alt="" width="400" height="600"/></div>
+			<div class="imgContainer"><Image src={import('../images/goose26.jpeg')} alt="" width="400" height="600"/></div>
+		</div>
     </Layout>
 </main>
 
@@ -22,4 +86,11 @@ import { Image, Picture } from '@astrojs/image/components';
 		align-items: center;
 		margin: 2rem;
 	}
+
+	.imgContainer{
+    	float:left;
+		margin-left: 30px;
+		margin-top: 30px;
+	}
+
 </style>
