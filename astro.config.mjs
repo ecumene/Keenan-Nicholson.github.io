@@ -10,6 +10,5 @@ export default {
   integrations: [image({
     serviceEntryPoint: '@astrojs/image/sharp'
   })],
-  site: 'https://Keenan-Nicholson.github.io',
-  base: '/Keenan-Nicholson/atro-website'
+  site: 'https://Keenan-Nicholson.github.io'
 }
