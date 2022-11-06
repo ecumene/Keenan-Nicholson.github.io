@@ -1,22 +1,42 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image, Picture } from '@astrojs/image/components';
 ---
 
 <Layout title="Keenan Nicholson">
 	<main>
-		<div>
-			<h1>Hi there, I'm Keenan</h1>
-			<h2>Extremely cool guy</h2>
-			<code><pre>╠ <a href="https://github.com">GitHub</a>
-║
-╠ LinkedIn
-║
-╠ Email
-║
-╠ Twitter</pre></code>
-		</div>
-	</main>
-</Layout>
+		<code><pre>
+links
+│				
+├─ <a href="https://github.com">GitHub</a>
+│
+├─ <a href="https://www.linkedin.com/in/kbnicholson">LinkedIn</a>					
+│
+├─ <a href="https://twitter.com/keeb0rg">Twitter</a>
+│  │
+│  ├─ <a href="https://twitter.com/ISSTrackerNL">ISS Tracker</a>
+│  │
+│  └─ <a href="https://twitter.com/uwudeau">Uwudeau</a>
+│
+└─ <a href="mailto:keenanbnicholson@gmail.com">Email</a>
+		</pre></code>
+			<div>
+
+				<h1>Hi there, I'm Keenan</h1>
+				<h2>About me:</h2>
+<p>
+Haver of a BSc major in Computational Mathematics, currently working 
+toward a BA major in Computer Science, minor in Geography</p>
+<p>
+Lately I have been trying my hand at some data processing, messing 
+about with QGIS and maps, and learning some AI.
+</p>
+<p>
+Pictures of my dog: <a href="./goose_gallery">Goose Gallery</a>
+</p>
+			</div>
+		</main>
+	</Layout>
 
 <style>
 	:root {
@@ -31,6 +51,10 @@ import Layout from '../layouts/Layout.astro';
 		margin: 2rem;
 	}
 
+	div {
+		margin: 25px 0 0.75rem 0;
+	}
+
 	h1 {
 		font-weight: 600;
 		font-size: 3rem;
@@ -41,18 +65,22 @@ import Layout from '../layouts/Layout.astro';
 		margin: 0 0 1.5rem 0;
 		font-size: 1.75rem;
 	}
-	
+
+	p {
+		margin: 0 0 0.75rem 0;
+		font-size: 1.35rem;
+		white-space: pre;
+	}
+
 	code {
 		font-size: 1.5rem;
+		position: absolute;
+		left: 25px;
 	}
 
 	a {
 		color: rgb(151, 151, 202);
-	}
-
-	.link-card-grid {
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+		text-decoration: none;
+		font-size: 1.35rem;
 	}
 </style>
