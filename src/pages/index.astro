@@ -6,8 +6,9 @@ import Layout from "../layouts/Layout.astro";
   <main>
     <div id="wrapper">
       <div id="links">
-        <code
-          ><pre>links
+        <code>
+          <pre>            
+links
 │				
 ├─ <a href="https://github.com/Keenan-Nicholson">GitHub</a>
 │
@@ -24,11 +25,26 @@ import Layout from "../layouts/Layout.astro";
         </code>
       </div>
       <div id="about">
+        <pre
+          id="welcome">          
+██╗    ██╗███████╗██╗      ██████╗ ██████╗ ███╗   ███╗███████╗
+██║    ██║██╔════╝██║     ██╔════╝██╔═══██╗████╗ ████║██╔════╝
+██║ █╗ ██║█████╗  ██║     ██║     ██║   ██║██╔████╔██║█████╗  
+██║███╗██║██╔══╝  ██║     ██║     ██║   ██║██║╚██╔╝██║██╔══╝  
+╚███╔███╔╝███████╗███████╗╚██████╗╚██████╔╝██║ ╚═╝ ██║███████╗
+ ╚══╝╚══╝ ╚══════╝╚══════╝ ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+
+
+        </pre>
         <h1>Hi there, I'm Keenan</h1>
         <h2>About me:</h2>
         <p>
           Haver of a BSc major in Computational Mathematics, currently working
-          toward a BA major in Computer Science, minor in Geography
+          toward a BA major in Computer Science, <a
+            id="hmm"
+            href="https://i.kym-cdn.com/entries/icons/original/000/037/848/cover2.jpg"
+            >minor</a
+          > in Geography
         </p>
         <p>
           Lately I have been trying my hand at some data processing, messing
@@ -78,6 +94,14 @@ import Layout from "../layouts/Layout.astro";
     overflow: hidden;
     margin-left: 30%;
     margin-top: 0.6%;
+  }
+
+  #welcome {
+    text-align: center;
+  }
+
+  #hmm {
+    color: white;
   }
 
   h1 {
