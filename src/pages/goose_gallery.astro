@@ -1,100 +1,170 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Image} from '@astrojs/image/components';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "@astrojs/image/components";
 ---
 
 <main>
-    <Layout title="Keenan Nicholson - Goose Gallery">
-		<a class="back" href="..">back</a>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose4.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose2.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose1.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose3.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose5.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose25.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose7.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose8.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose9.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose13.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose14.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose12.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose15.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose16.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose17.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose18.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose19.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose20.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose21.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose22.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose23.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose24.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose35.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose34.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose33.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose32.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose30.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose31.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose29.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose28.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose27.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose11.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose10.jpeg')} alt="" /></div>
-		</div>
-		<div>
-			<div class="imgContainer"><Image src={import('../images/goose6.jpeg')} alt="" /></div>
-			<div class="imgContainer"><Image src={import('../images/goose26.jpeg')} alt="" /></div>
-		</div>
-    </Layout>
+  <Layout title="Keenan Nicholson - Goose Gallery">
+    <a class="back" href="..">back</a>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose4.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose2.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose1.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose3.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose5.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose25.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose7.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose8.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose9.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose13.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose14.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose12.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose15.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose16.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose17.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose18.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose19.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose20.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose21.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose22.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose23.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose24.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose35.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose34.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose33.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose32.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose30.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose31.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose29.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose28.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose27.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose11.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose10.jpeg")} alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose6.jpeg")} alt="" />
+      </div>
+      <div class="imgContainer">
+        <Image src={import("../images/goose26.jpeg")} alt="" />
+      </div>
+    </div>
+  </Layout>
 </main>
 
 <style>
-	:root {
-		background: linear-gradient(270deg,#474747, #272727);
-		color: white;
-	}
+  :root {
+    background: linear-gradient(270deg, #474747, #272727);
+    color: white;
+  }
 
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 2rem;
-	}
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
 
-	.imgContainer{
-    	float:left;
-		margin-left: 30px;
-		margin-top: 30px;
-	}
+  .imgContainer {
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 
-	.imgContainer img {
-		width: 400px;
-		height: 600px;
-	}
+  .imgContainer img {
+    width: 400px;
+    height: 600px;
+  }
 
-	.back{
-		color: rgb(151, 151, 202);
-		text-decoration: none;
-		font-size: 1.35rem;
-	}
+  .back {
+    color: rgb(151, 151, 202);
+    text-decoration: none;
+    font-size: 1.35rem;
+  }
 </style>

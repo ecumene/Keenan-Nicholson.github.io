@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,30 +8,34 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://rsms.me/">
-		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
-<style>
-	body {
-		display: flex;
-		justify-content: center;
-		margin: 0;
-	}
-</style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+      }
+    </style>
 
-<style is:global>
-	:root { font-family: 'Inter', sans-serif; }
-	@supports (font-variation-settings: normal) {
-		:root { font-family: 'Inter var', sans-serif; }
-	}
-</style>
+    <style is:global>
+      :root {
+        font-family: "Inter", sans-serif;
+      }
+      @supports (font-variation-settings: normal) {
+        :root {
+          font-family: "Inter var", sans-serif;
+        }
+      }
+    </style>
+  </body>
+</html>

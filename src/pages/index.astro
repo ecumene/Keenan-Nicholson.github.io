@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Keenan Nicholson">
-	<main>
-		<div id = "wrapper">
-			<div id = "links">
-				<code><pre>
-links
+  <main>
+    <div id="wrapper">
+      <div id="links">
+        <code
+          ><pre>links
 │				
 ├─ <a href="https://github.com/Keenan-Nicholson">GitHub</a>
 │
@@ -20,91 +20,90 @@ links
 │  └─ <a href="https://twitter.com/uwudeau">Uwudeau</a>
 │
 └─ <a href="mailto:keenanbnicholson@gmail.com">Email</a>
-				</pre></code>
-			</div>
-				<div id = "about">
-					<h1>Hi there, I'm Keenan</h1>
-					<h2>About me:</h2>
-					<p>
-					Haver of a BSc major in Computational Mathematics, currently working toward a BA major in Computer Science, minor in Geography
-					</p>
-					<p>
-					Lately I have been trying my hand at some data processing, messing about with QGIS and maps, and learning some AI.
-					</p>
-					<p>
-					Pictures of my dog: <a href="./goose_gallery">Goose Gallery</a>
-					</p>
-				</div>
-			</div>
-		</main>
-	</Layout>
+				</pre>
+        </code>
+      </div>
+      <div id="about">
+        <h1>Hi there, I'm Keenan</h1>
+        <h2>About me:</h2>
+        <p>
+          Haver of a BSc major in Computational Mathematics, currently working
+          toward a BA major in Computer Science, minor in Geography
+        </p>
+        <p>
+          Lately I have been trying my hand at some data processing, messing
+          about with QGIS and maps, and learning some AI.
+        </p>
+        <p>
+          Pictures of my dog: <a href="./goose_gallery">Goose Gallery</a>
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>
 
 <style>
-	:root {
-		background: linear-gradient(270deg,#444444, #272727);
-		color: white;
-		width: 1920px;
-	}
+  :root {
+    background: linear-gradient(270deg, #444444, #272727);
+    color: white;
+    width: 1920px;
+  }
 
-	main {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 2rem;
-	}
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+  }
 
-	#wrapper {
-		width: 1800px;
-		overflow:scroll;
-		position: relative;
-		/*border: 1px solid rgb(25, 0, 255);*/
-		height:100%;
-		margin: 0 auto;
-	}
+  #wrapper {
+    width: 1800px;
+    overflow: scroll;
+    position: relative;
+    /*border: 1px solid rgb(25, 0, 255);*/
+    height: 100%;
+    margin: 0 auto;
+  }
 
-	#links {
-		width: 300px;
-		float:left;
-		/*border: 1px solid red;*/
-		position: relative;
+  #links {
+    width: 300px;
+    float: left;
+    /*border: 1px solid red;*/
+    position: relative;
+  }
 
-	}
+  #about {
+    width: 750px;
+    /*border: 1px solid green;*/
+    overflow: hidden;
+    margin-left: 30%;
+    margin-top: 0.6%;
+  }
 
-	#about {
-		width: 750px;
-		/*border: 1px solid green;*/
-    	overflow: hidden;
-		margin-left: 30%;
-		margin-top: 0.6%;
-		
-	}
+  h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
 
-	h1 {
-		font-weight: 600;
-		font-size: 3rem;
-		margin: 0 0 1rem 0;
-	}
+  h2 {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.75rem;
+  }
 
-	h2 {
-		margin: 0 0 1.5rem 0;
-		font-size: 1.75rem;
-	}
+  p {
+    margin: 0 0 1rem 0;
+    font-size: 1.35rem;
+  }
 
+  code {
+    font-size: 1.5rem;
+    position: relative;
+  }
 
-	p {
-		margin: 0 0 1rem 0;
-		font-size: 1.35rem;   
-
-	}
-
-	code {
-		font-size: 1.5rem;
-		position: relative;
-	}
-
-	a {
-		color: rgb(151, 151, 202);
-		text-decoration: none;
-		font-size: 1.35rem;
-	}
+  a {
+    color: rgb(151, 151, 202);
+    text-decoration: none;
+    font-size: 1.35rem;
+  }
 </style>
