@@ -5,7 +5,8 @@ import { Image } from "@astrojs/image/components";
 
 <main>
   <Layout title="Keenan Nicholson - Goose Gallery">
-    <a id="top" href="..">back</a>
+    <a id="topAnchor"></a>
+    <a id="back" href="..">back</a>
     <div>
       <div class="imgContainer">
         <Image src={import("../images/goose4.jpeg")} alt="" />
@@ -135,7 +136,16 @@ import { Image } from "@astrojs/image/components";
         <Image src={import("../images/goose26.jpeg")} alt="" />
       </div>
     </div>
-    <a id="bottom" href="..">back</a>
+
+    <ul id="bottomLinks">
+      <li style="display:inline-block;">
+        <a id="bottomBack" href="..">back</a>
+      </li>
+      <li style="display:inline-block;">|</li>
+      <li style="display:inline-block;">
+        <a id="backToTop" href="#topAnchor">top of page</a>
+      </li>
+    </ul>
   </Layout>
 </main>
 
@@ -164,13 +174,25 @@ import { Image } from "@astrojs/image/components";
     object-fit: cover;
   }
 
-  #top {
+  #back {
     color: rgb(151, 151, 202);
     text-decoration: none;
     font-size: 1.35rem;
   }
 
-  #bottom {
+  #bottomBack {
+    color: rgb(151, 151, 202);
+    text-decoration: none;
+    font-size: 1.35rem;
+  }
+
+  #backToTop {
+    color: rgb(151, 151, 202);
+    text-decoration: none;
+    font-size: 1.35rem;
+  }
+
+  #bottomLinks {
     margin-top: 2rem;
     color: rgb(151, 151, 202);
     text-decoration: none;
