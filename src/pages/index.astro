@@ -69,7 +69,12 @@ links
   :root {
     background: linear-gradient(270deg, #444444, #272727);
     color: white;
-    width: 1920px;
+  }
+
+  @media screen and (max-width: 600px) {
+    #about {
+      width: 100%;
+    }
   }
 
   main {
@@ -80,7 +85,6 @@ links
   }
 
   #wrapper {
-    width: 1800px;
     overflow: scroll;
     position: relative;
     height: 100%;
@@ -88,17 +92,14 @@ links
   }
 
   #links {
-    width: 300px;
+    max-width: 300px;
     float: left;
-    position: relative;
   }
 
   #about {
-    width: 750px;
     overflow: hidden;
     margin-left: 30%;
     margin-top: 0.6%;
-    flex-wrap: wrap;
   }
 
   #welcome {
