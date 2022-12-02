@@ -61,7 +61,10 @@ const chunkedImages = [...chunks(gooseImages, 3)];
         <div>
           {gooseImages.map((gooseImage) => (
             <div class="imgContainer">
-              <Image src={import(`../${gooseImage}`)} alt="" />
+              <Image
+                src={import(/* @vite-ignore */ `../${gooseImage}`)}
+                alt=""
+              />
             </div>
           ))}
         </div>
