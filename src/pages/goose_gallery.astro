@@ -1,6 +1,52 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "@astrojs/image/components";
+
+function* chunks(arr, n) {
+  for (let i = 0; i < arr.length; i += n) {
+    yield arr.slice(i, i + n);
+  }
+}
+
+const gooseImages = [
+  "images/goose4.jpeg",
+  "images/goose2.jpeg",
+  "images/goose1.jpeg",
+  "images/goose3.jpeg",
+  "images/goose5.jpeg",
+  "images/goose25.jpeg",
+  "images/goose7.jpeg",
+  "images/goose8.jpeg",
+  "images/goose9.jpeg",
+  "images/goose10.jpeg",
+  "images/goose12.jpeg",
+  "images/goose13.jpeg",
+  "images/goose14.jpeg",
+  "images/goose12.jpeg",
+  "images/goose15.jpeg",
+  "images/goose16.jpeg",
+  "images/goose17.jpeg",
+  "images/goose18.jpeg",
+  "images/goose19.jpeg",
+  "images/goose20.jpeg",
+  "images/goose21.jpeg",
+  "images/goose22.jpeg",
+  "images/goose23.jpeg",
+  "images/goose24.jpeg",
+  "images/goose35.jpeg",
+  "images/goose34.jpeg",
+  "images/goose33.jpeg",
+  "images/goose32.jpeg",
+  "images/goose30.jpeg",
+  "images/goose31.jpeg",
+  "images/goose29.jpeg",
+  "images/goose28.jpeg",
+  "images/goose27.jpeg",
+  "images/goose6.jpeg",
+  "images/goose26.jpeg",
+];
+
+const chunkedImages = [...chunks(gooseImages, 3)];
 ---
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,135 +55,18 @@ import { Image } from "@astrojs/image/components";
   <Layout title="Keenan Nicholson - Goose Gallery">
     <a id="topAnchor"></a>
     <a id="back" href="..">back</a>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose4.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose2.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose1.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose3.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose5.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose25.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose7.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose8.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose9.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose13.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose14.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose12.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose15.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose16.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose17.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose18.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose19.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose20.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose21.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose22.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose23.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose24.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose35.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose34.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose33.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose32.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose30.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose31.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose29.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose28.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose27.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose11.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose10.jpeg")} alt="" />
-      </div>
-    </div>
-    <div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose6.jpeg")} alt="" />
-      </div>
-      <div class="imgContainer">
-        <Image src={import("../images/goose26.jpeg")} alt="" />
-      </div>
-    </div>
+
+    {
+      chunkedImages.map((gooseImages) => (
+        <div>
+          {gooseImages.map((gooseImage) => (
+            <div class="imgContainer">
+              <Image src={import(`../${gooseImage}`)} alt="" />
+            </div>
+          ))}
+        </div>
+      ))
+    }
 
     <ul id="bottomLinks">
       <li style="display:inline-block;">
