@@ -116,8 +116,8 @@ import { Image } from "@astrojs/image/components";
   }
   .project {
     margin: 3rem;
-    width: 40vw;
-    height: 50vh;
+    max-width: 40%;
+    max-height: 50%;
     border: 1px solid white;
     border-radius: 10px;
     padding: 1rem;
@@ -233,8 +233,8 @@ import { Image } from "@astrojs/image/components";
     .desktop-nav {
       display: none;
     }
-    .wrapper {
-      margin-left: 10rem;
+    .content {
+      flex-direction: column;
     }
     img {
       display: none;
