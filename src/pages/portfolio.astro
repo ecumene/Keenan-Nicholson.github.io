@@ -69,14 +69,15 @@ import { Image } from "@astrojs/image/components";
             </a>
             <p>
               A project for COMP3400 at Memorial University of Newfoundland
-              where I analyze the following dataset -
-              https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles.
-              The goal of this project is to predict the level of CO2 emissions
-              outputted by a vehicle based on several features the car has (for
-              example, transmission type, fuel type, fuel consumption, vehicle
-              make etc). This dataset is very nice, so for demonstration
-              purposes I have created artificial outliers and anomalies in the
-              dataset.
+              where I examine a <a
+                href="https://www.kaggle.com/datasets/debajyotipodder/co2-emission-by-vehicles"
+                id="dataset">dataset</a
+              > containtining vehicle information obtained over a 7 year period in
+              Canada The goal of this project is to predict the level of CO2 emissions
+              outputted by a vehicle based on several features the car has (for example,
+              transmission type, fuel type, fuel consumption, vehicle make etc).
+              This dataset is very nice, so for demonstration purposes I have created
+              artificial outliers and anomalies in the dataset.
             </p>
             <Image src={import("../images/CA_Emission.jpeg")} alt="" />
           </div>
@@ -149,6 +150,12 @@ import { Image } from "@astrojs/image/components";
   }
   a {
     font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+  }
+  #dataset {
+    font-size: 1.2rem;
     font-weight: 600;
     text-decoration: none;
     color: white;
