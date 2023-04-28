@@ -4,43 +4,41 @@ import { Image } from "@astrojs/image/components";
 ---
 
 <Layout title="Keenan Nicholson - Home">
-  <main>
-    <div class="wrapper">
-      <button class="hamburger">
-        <div class="bar"></div>
-      </button>
-      <nav class="desktop-nav">
-        <a href="../index">Home</a>
-        <a href="../about">About</a>
-        <a href="../portfolio">Portfolio</a>
-        <a href="../goose_gallery">Goose Gallery</a>
-      </nav>
-      <nav class="mobile-nav">
-        <a href="../index">Home</a>
-        <a href="../about">About</a>
-        <a href="../portfolio">Portfolio</a>
-        <a href="../goose_gallery">Goose Gallery</a>
-      </nav>
-      <div class="slide_show">
-        <Image src={import("../images/headshot.jpeg")} alt="" />
-      </div>
-      <div class="content">
-        <h2>Hi, I'm</h2>
-        <h1>Keenan Nicholson</h1>
-        <p>Student and alumnus of Memorial University of Newfoundland</p>
-        <a href="https://twitter.com/keeb0rg" target="_blank"
-          ><i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kbnicholson" target="_blank"
-          ><i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Keenan-Nicholson" target="_blank"
-          ><i class="fa-brands fa-github"></i>
-        </a>
-        <a href="mailto:keenanbnicholson@gmail.com"
-          ><i class="fa-solid fa-envelope"></i>
-        </a><a href="mailto:keenanbnicholson@gmail.com"></a>
-      </div>
+  <main class="wrapper">
+    <button class="hamburger">
+      <div class="bar"></div>
+    </button>
+    <nav class="desktop-nav">
+      <a href="../index">Home</a>
+      <a href="../about">About</a>
+      <a href="../portfolio">Portfolio</a>
+      <a href="../goose_gallery">Goose Gallery</a>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="../index">Home</a>
+      <a href="../about">About</a>
+      <a href="../portfolio">Portfolio</a>
+      <a href="../goose_gallery">Goose Gallery</a>
+    </nav>
+    <div class="slide_show">
+      <Image src={import("../images/headshot.jpeg")} alt="" />
+    </div>
+    <div class="content">
+      <h2>Hi, I'm</h2>
+      <h1>Keenan Nicholson</h1>
+      <p>Student and alumnus of Memorial University of Newfoundland</p>
+      <a href="https://twitter.com/keeb0rg" target="_blank"
+        ><i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/kbnicholson" target="_blank"
+        ><i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Keenan-Nicholson" target="_blank"
+        ><i class="fa-brands fa-github"></i>
+      </a>
+      <a href="mailto:keenanbnicholson@gmail.com"
+        ><i class="fa-solid fa-envelope"></i>
+      </a><a href="mailto:keenanbnicholson@gmail.com"></a>
     </div>
   </main>
 </Layout>
@@ -52,6 +50,10 @@ import { Image } from "@astrojs/image/components";
   body {
     font-family: "Source Sans Pro", sans-serif;
     color: white;
+  }
+  .fa-brands,
+  .fa-solid {
+    font-size: 1em;
   }
   .wrapper {
     display: flex;
@@ -70,15 +72,13 @@ import { Image } from "@astrojs/image/components";
     background-image: linear-gradient(180deg, #0e0b16, #091929);
   }
   .content {
-    width: 40rem;
-    height: 40rem;
-    margin-top: 19rem;
     padding: 1rem;
+    margin-top: 19rem;
     order: 0;
   }
   .slide_show {
-    width: 40rem;
-    height: 40rem;
+    width: 20rem;
+    height: 20rem;
     margin-top: 13rem;
     border-radius: 1.25rem;
     order: 1;
@@ -177,18 +177,14 @@ import { Image } from "@astrojs/image/components";
       display: none;
     }
     .content {
-      margin-top: 3rem;
+      margin-top: 0rem;
     }
     .slide_show {
       margin-top: 0;
-      width: 20rem;
-      height: 20rem;
+      padding: 0 1.5rem;
     }
     i {
       margin: 1.25rem;
-    }
-    .slide_show {
-      margin-top: -15rem;
     }
   }
 </style>
